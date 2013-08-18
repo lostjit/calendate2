@@ -11,11 +11,11 @@ class UsersController < ApplicationController
     # in Rails 3 line 9 would be
     # @user = User.new(params[:user])
   	@user = User.new(user_params)
-  	ekjaj debug
+
 
     if @user.save
       sign_in @user
-      redirect_to profile_path
+      redirect_to user_path(@user)
     else
       @show = "register"
       render action: "new"
@@ -28,6 +28,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+    params.require(:user).permit(:first_name, :last_name, :email_address, :password, :password_confirmation)
   end
 end
