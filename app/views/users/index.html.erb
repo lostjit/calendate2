@@ -1,0 +1,32 @@
+Welcome To Smalendate! phong is the best
+
+
+
+
+
+
+<%= simple_form_for @user, :url => login_path, :method => :post, :html => {:class => 'slide-toggle-left', :id => 'login_user'} do |f| %>
+	<h1>Login</h1>
+	<% if flash[:error] %>
+		<p><%= flash[:error] %></p>
+	<% end %>
+  <%= f.input :email_address, label: 'Email' %>
+  <%= f.input :password, label: 'Password' %>
+  <%= f.button :submit, value:'Login', class: 'btn btn-primary'%>
+
+<% end %>
+
+
+
+or
+<h1> User Create</h1>
+<%= simple_form_for @user, :url => register_path, :method => :post, :html => {:class => 'slide-toggle-left'} do |f| %>
+	<h1>Register</h1>
+  <%= f.input :first_name, label: 'First Name' %>
+  <%= f.input :last_name, label: 'Last Name' %>
+  <%= f.input :email_address, label: 'Email' %>
+  <%= f.input :password, label: 'Password' %>
+  <%= f.input :password_confirmation, label: 'Confirm Password' %>
+  <%= f.button :submit, value:'Register', class: 'btn btn-primary'%>
+   <a href='#' id='login_link' class='clearfix'>Or Login</a>
+<% end %>
