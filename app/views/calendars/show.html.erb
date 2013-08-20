@@ -1,3 +1,4 @@
+
 <h1>Events for: <%= @day %></h1>
 
 <div id ='leftcalen'>
@@ -15,12 +16,11 @@
 
 <div id='rightcalen'>
 
-	<%= simple_form_for @newevent, :url => calendar_add_path, :method => :post do |f| %>
+	<%= simple_form_for @newevent, :url => calendar_add_path(@day), :method => :post do |f| %>
 	<h1>Add Event</h1>
 	  <%= f.input :event, label: 'Title:' %>
 	  <%= f.input :description, :as=> :text,  label: 'Notes' %>
 	  	Time: <%= select_time() %>
-	  <input type ='hidden' name ='dayis' value =  <%= @day %>>
 	  <%= f.button :submit, value:'Add it!', class: 'btn btn-primary'%>
 
 <% end %>

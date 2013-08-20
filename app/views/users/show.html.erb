@@ -25,9 +25,9 @@
 
 
 			<td class = 'regday'>
-
-				<%= simple_form_for @user, :url => calendar_show_path, :method => :post  do |f| %>
-					<input type = 'hidden' name='whatday' value = '2013-08-19'>
+				<% @whatday = '2013-08-19'%>
+				<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+					
 				
 				  <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
 
@@ -35,7 +35,7 @@
 
 				
 
-			   1
+			   6
 			</td>
 
 
