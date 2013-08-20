@@ -26,6 +26,15 @@ class CalendarsController < ApplicationController
   		
   end
 
+  def destroy
+  	calendar = Calendar.find(params[:id])
+  	if calendar.destroy
+  		render text: "destroy"
+  	else
+  		render text: "not destroyed"
+  	end
+  end
+
 
 
 

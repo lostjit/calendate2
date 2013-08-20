@@ -9,7 +9,8 @@
 		</div>
 		<div class = 'eventdiv'>
 			<p>Event: <%= event.event %> </p>
-			<p>Notes: <%= event.description %> </p>		
+			<p>Notes: <%= event.description %> </p>	
+			<%= link_to "delete", calendar_delete_path(event.id), method: :delete %>	
 		</div>
 	<% end %>
 </div>
