@@ -7,5 +7,6 @@ class CreateCalendars < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :calendars, :user_id
   end
 end

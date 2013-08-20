@@ -8,8 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    # in Rails 3 line 9 would be
-    # @user = User.new(params[:user])
+ 
   	@user = User.new(user_params)
 
 

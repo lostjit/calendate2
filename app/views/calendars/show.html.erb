@@ -1,4 +1,13 @@
-blah blah bloop
+<h1>Events for: <%= @day %></h1>
 
 
-<%= debug current_user %>
+<% @temp2.each do |event| %>
+	
+	<div class = 'eventdiv'>
+		<p>Event title: <%= event.event %> </p>
+		<p>Event Description: <%= event.description %> </p>
+		<p>Event Time:  <%= event.event_time.to_formatted_s(:time) %> </p>
+	</div>
+
+
+<% end %>

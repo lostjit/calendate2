@@ -16,6 +16,8 @@
 
   before_save { self.email_address = email_address.downcase }
   has_secure_password
+
+  has_many :calendars
   
 end
 
