@@ -1,5 +1,10 @@
 
-<h1>Events for: <%= @day %></h1>
+<h1>Events for: <%= @day %></h1>    <%= link_to "Back to your Calendate!", user_path, method: :get %>	
+
+
+<div class ='logout'>
+	<%= link_to 'Logout', logout_path, :method => :post %>
+</div>
 
 <div id ='leftcalen'>
 
@@ -10,7 +15,7 @@
 		<div class = 'eventdiv'>
 			<p>Event: <%= event.event %> </p>
 			<p>Notes: <%= event.description %> </p>	
-			<%= link_to "delete", calendar_delete_path(event.id), method: :delete %>	
+			<%= link_to "delete", calendar_delete_path(event.id, @day), method: :delete %>	
 		</div>
 	<% end %>
 </div>

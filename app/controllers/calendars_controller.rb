@@ -1,10 +1,6 @@
 class CalendarsController < ApplicationController
 
-
-
-
   def show
-  		
   		@alluserevents = Calendar.where(:day_of_event => params[:dayis], :user_id => current_user) 
   		@day =  params[:dayis]	
   		@newevent = Calendar.new
@@ -27,9 +23,10 @@ class CalendarsController < ApplicationController
   end
 
   def destroy
+    @test = params
   	calendar = Calendar.find(params[:id])
   	if calendar.destroy
-  		render text: "destroy"
+  		 redirect_to calendar_show_path(current_user, params[:format])
   	else
   		render text: "not destroyed"
   	end

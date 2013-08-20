@@ -1,31 +1,31 @@
-<h1><%= @user.first_name + " " + @user.last_name %> </h1>
+<<<<<<< HEAD
+<% content_for :username do%>
+<h1 class="title">Calendate</h1>
+<h2 class="username"><%= @user.first_name + " " + @user.last_name %> </h2>
+<% end %>
+
+
+<div class ='logout'>
+	<%= link_to 'Logout', logout_path, :method => :post %>
+</div>
 
 
 
-
-<table>
-
-
-							<h1 id ='headMonth'>August</h1>
-
-
-	<thead>
-
-		<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
-	</thead>
-
-
-
-	<tbody>
-		<tr>
-			<td class = 'regday'></td>
-			<td class = 'regday'></td>
-			<td class = 'regday'></td>
-			<td class = 'regday'></td>
-
-
-			<td class = 'regday'>
-				<% @whatday = '2013-08-19'%>
+<div id="table">
+	<table>
+		<h1 id ='head_month'>August</h1>
+		<thead>
+			<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'>
+					<p class="num">1</p>
+						<% @whatday = '2013-08-19'%>
 				<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 					
 				
@@ -33,37 +33,33 @@
 
 				<% end %>
 
-				
+					
 
-			   6
-			</td>
+				   
+				</td>
+				<td class = 'regday'><p class="num">2</p></td>
+				<td class = 'regday'><p class="num">3</p></td></tr>
+				<tr>
+					<%(4..10).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
 
+				<tr>
+					<%(11..17).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
 
+				<tr>
+					<%(18..24).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
 
-			<td class = 'regday'>2</td>
-			<td class = 'regday'>3</td></tr>
+				<tr>
+					<%(25..31).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
 
-		<tr><td class = 'regday'>4</td><td class = 'regday'>5</td><td class = 'regday'>6</td><td class = 'regday'>7</td><td class = 'regday'>8</td><td class = 'regday'>9</td><td class = 'regday'>10</td></tr>
+		</tbody>
+	</table>
+</div>
 
-		<tr><td class = 'regday'>11</td><td class = 'regday'>12</td><td class = 'regday'>13</td><td class = 'regday'>14</td><td class = 'regday'>15</td><td class = 'regday'>16</td><td class = 'regday'>17</td></tr>
-
-		<tr><td class = 'regday'>18</td><td class = 'regday'>19</td><td class = 'regday'>20</td><td class = 'regday'>21</td><td class = 'regday'>22</td><td class = 'regday'>23</td><td class = 'regday'>24</td></tr>
-
-		<tr><td class = 'regday'>25</td><td class = 'regday'>26</td><td class = 'regday'>27</td><td class = 'regday'>28</td><td class = 'regday'>29</td><td class = 'regday'>30</td><td class = 'regday'>31</td></tr>
-
-	</tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</table>

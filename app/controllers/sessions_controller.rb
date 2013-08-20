@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
 	def login
 		user = User.find_by(email_address: params[:user][:email_address]).try(:authenticate, params[:user][:password])
 	  	if user == false || user.nil?
-	  		redirect_to welcome_path, :flash => { :error => 'Email and password don\'t match.' }
+	  		redirect_to users_path, :flash => { :error => 'Email and password don\'t match.' }
 	  	else
 	  		sign_in user
 			redirect_to user_path(user)
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
 	def destroy
 		sign_out
-  		redirect_to welcome_path
+  		redirect_to users_path
 	end
 
 end

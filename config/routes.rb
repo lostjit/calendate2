@@ -6,6 +6,7 @@ Calendate2::Application.routes.draw do
   get 'calendar_show/:id/:dayis' => 'calendars#show', as: :calendar_show
   post 'calendar_add/:dayis' => 'calendars#add', as: :calendar_add
   delete 'calendar/:id' => 'calendars#destroy', as: :calendar_delete
+  post 'sessions/destroy' => 'sessions#destroy', as: :logout
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

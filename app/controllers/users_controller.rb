@@ -17,7 +17,7 @@ class UsersController < ApplicationController
       redirect_to user_path(@user)
     else
       @show = "register"
-      render action: "new"
+      render action: "index"
     end
   end
 
