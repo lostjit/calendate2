@@ -3,6 +3,7 @@ Calendate2::Application.routes.draw do
   post 'login' => 'sessions#login', as: :login
   post 'register' => 'users#create', as: :register
   post 'calendar_show' => 'calendars#show', as: :calendar_show
+  post 'calendar_add' => 'calendars#add', as: :calendar_add
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
