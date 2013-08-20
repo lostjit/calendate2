@@ -16,8 +16,8 @@ class CalendarsController < ApplicationController
   		#@temp99 = params
   		if @newevent.save
   			redirect_to calendar_show_path(current_user, params[:dayis])
-  		else  			
-  			@temp99 = 'fail'
+  		else  	
+  			redirect_to calendar_show_path(current_user, params[:dayis])
   		end
   		
   end
