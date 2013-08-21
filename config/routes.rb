@@ -1,5 +1,6 @@
 Calendate2::Application.routes.draw do
-  resources :users
+  resources :users, only: [:index, :create, :new, :destroy, :edit]
+  get 'users/:id/:monthis' => 'users#show', as: :user_show
   post 'login' => 'sessions#login', as: :login
   post 'register' => 'users#create', as: :register
   #post 'calendar_show/:id' => 'calendars#show', as: :calendar_show
@@ -7,7 +8,7 @@ Calendate2::Application.routes.draw do
   post 'calendar_add/:dayis' => 'calendars#add', as: :calendar_add
   delete 'calendar/:id' => 'calendars#destroy', as: :calendar_delete
   post 'sessions/destroy' => 'sessions#destroy', as: :logout
-
+  post 'calendar_show/:id/:monthis' => 'users#show', as: :calendar_show_post  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

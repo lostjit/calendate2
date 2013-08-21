@@ -22,11 +22,12 @@ class UsersController < ApplicationController
   end
 
   def show
-  	@user = User.find(session[:user_id])
+    @dateis = (params[:monthis].to_date)
+  	@user = Calendar.new
 
     @time1 = Time.new
-    @year = @time1.year
-    @month = @time1.month
+    @year = @dateis.year
+    @month = @dateis.month
     @day = 1
 
     case @year

@@ -1,6 +1,10 @@
+
+<% @previous = Date.new(@year,@month,@day) << 1 %>
+<% @next = Date.new(@year,@month,@day) >> 1  %>
+
 <% content_for :username do%>
 <h1 class="title">Calendate</h1>
-<h2 class="username"><%= @user.first_name + " " + @user.last_name %> </h2>
+<h2 class="username"><%= current_user.first_name + " " + current_user.last_name %> </h2>
 <% end %>
 
 
@@ -12,7 +16,10 @@
 
 <div id="table">
 	<table>
+		<h6><%= link_to 'Last Month', calendar_show_path(current_user, @previous), :method => :post%></h6>
 		<h1 id ='head_month'><%= @monthname %></h1>
+		<h6><%= link_to 'Next Month', calendar_show_path(current_user, @next), :method => :post %></h6>
+
 		<thead>
 			<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
 		</thead>
@@ -30,8 +37,9 @@
 						<tr><td id = 'square<%=i%>' class = 'regday'>
 							
 								<% if defined?@blank%>
-								<%@blank <= @numofdays%>
-								<%= @blank +=1%>
+									<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+									<%end%>	
 								<%end%>	
 								
 								<% if ((i - @answer) +1 < 10)
@@ -51,8 +59,9 @@
 						<td id = 'square<%=i%>' class = 'regday'>
 							
 						<% if defined?@blank%>
-							<%@blank <= @numofdays%>
-							<%= @blank +=1%>
+							<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+								<%end%>	
 						<%end%>	
 						
 						<% if ((i - @answer) +1 < 10)
@@ -71,8 +80,9 @@
 						<td id = 'square<%=i%>' class = 'regday'>
 							
 							<% if defined?@blank%>
-								<%@blank <= @numofdays%>
-								<%= @blank +=1%>
+								<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+								<%end%>	
 							<%end%>	
 						
 								<% if ((i - @answer) +1 < 10)
