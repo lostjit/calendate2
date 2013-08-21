@@ -39,10 +39,8 @@
 								<% if defined?@blank%>
 									<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
-									<%end%>	
-								<%end%>	
-								
-								<% if ((i - @answer) +1 < 10)
+
+										<% if ((i - @answer) +1 < 10)
 										str_day = "0" + ((i - @answer) +1).to_s
 									else
 										str_day = ((i - @answer) +1).to_s
@@ -52,6 +50,11 @@
 							
 						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
+										
+									<%end%>	
+								<%end%>	
+								
+								
 							
 						</td>
 
@@ -61,10 +64,8 @@
 						<% if defined?@blank%>
 							<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
-								<%end%>	
-						<%end%>	
-						
-						<% if ((i - @answer) +1 < 10)
+
+										<% if ((i - @answer) +1 < 10)
 								str_day = "0" + ((i - @answer) +1).to_s
 							else
 								str_day = ((i - @answer) +1).to_s
@@ -75,6 +76,13 @@
 				 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 						<% end %>
 
+
+
+								<%end%>	
+						<%end%>	
+						
+						
+
 						</td></tr>
 					<%  else %>
 						<td id = 'square<%=i%>' class = 'regday'>
@@ -82,19 +90,27 @@
 							<% if defined?@blank%>
 								<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
-								<%end%>	
-							<%end%>	
-						
-								<% if ((i - @answer) +1 < 10)
+										<% if ((i - @answer) +1 < 10)
 										str_day = "0" + ((i - @answer) +1).to_s
 									else
 										str_day = ((i - @answer) +1).to_s
 									end%>
+
+
 								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 							
 						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
+
+
+
+
+
+								<%end%>	
+							<%end%>	
+						
+								
 						
 
 						</td>

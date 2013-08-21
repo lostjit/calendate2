@@ -105,8 +105,12 @@ class UsersController < ApplicationController
           @monthname = "December"
        end
 
+
        #variable to tell what day the 1st lands on for any given month/year (that we've listed)
     @answer = (@day + @a + @b) % 7
+
+    respond_to do |format| 
+      format.js
 
   end
 
