@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <% content_for :username do%>
 <h1 class="title">Calendate</h1>
 <h2 class="username"><%= @user.first_name + " " + @user.last_name %> </h2>
@@ -13,12 +12,67 @@
 
 <div id="table">
 	<table>
-		<h1 id ='head_month'>August</h1>
+		<h1 id ='head_month'><%= @monthname %></h1>
 		<thead>
 			<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
 		</thead>
 		<tbody>
-			<tr>
+
+			<% for i in 0..34 do %>
+				
+						<%if i === @answer
+							@blank = 0;
+							end%>
+					
+
+					<% case (i % 7) 
+						when 0%>
+						<tr><td id = 'square<%=i%>' class = 'regday'>
+							<% if defined?@blank%>
+								<% if defined?@blank%>
+									<%@blank <= @numofdays%>
+									<%= @blank +=1%>
+								<%end%>	
+							<%end%>
+						</td>
+
+					<%  when 6%>
+						<td id = 'square<%=i%>' class = 'regday'>
+							<% if defined?@blank%>
+								<% if defined?@blank%>
+									<%@blank <= @numofdays%>
+									<%= @blank +=1%>
+								<%end%>	
+							<%end%>
+
+						<% @whatday = '2013-08-19'%>
+						<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+					
+				
+				 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+
+						<% end %>
+
+						</td></tr>
+					<%  else %>
+						<td id = 'square<%=i%>' class = 'regday'>
+							<% if defined?@blank%>
+								<% if defined?@blank%>
+									<%@blank <= @numofdays%>
+									<%= @blank +=1%>
+								<%end%>	
+							<%end%>
+
+						</td>
+					<% end %>	
+				 <% end %>
+
+
+
+
+
+
+			<!--<tr>
 				<td class = 'regday'></td>
 				<td class = 'regday'></td>
 				<td class = 'regday'></td>
@@ -58,7 +112,7 @@
 					<%(25..31).each{|x|%> 
 					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
 				</tr>
-
+			-->
 		</tbody>
 	</table>
 </div>
