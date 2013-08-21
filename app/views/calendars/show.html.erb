@@ -1,5 +1,6 @@
 
-<h1>Events for: <%= @day %></h1>    <%= link_to "Back to your Calendate!", user_path, method: :get %>	
+
+<h1>Events for: <%= @day %></h1>    <%= link_to "Back to your Calendate!", user_show_path(current_user, @day), method: :get %>	
 
 
 <div class ='logout'>

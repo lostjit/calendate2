@@ -1,0 +1,150 @@
+
+<% @previous = Date.new(@year,@month,@day) << 1 %>
+<% @next = Date.new(@year,@month,@day) >> 1  %>
+
+<% content_for :username do%>
+<h1 class="title">Calendate</h1>
+<h2 class="username"><%= current_user.first_name + " " + current_user.last_name %> </h2>
+<% end %>
+
+
+<div class ='logout'>
+<%= link_to 'Logout', logout_path, :method => :post %>
+</div>
+<% end %>
+
+<div id="table">
+	<table>
+		<h6><%= link_to 'Last Month', calendar_show_path(current_user, @previous), :method => :post%></h6>
+		<h1 id ='head_month'><%= @monthname %></h1>
+		<h6><%= link_to 'Next Month', calendar_show_path(current_user, @next), :method => :post %></h6>
+
+		<thead>
+			<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
+		</thead>
+		<tbody>
+
+			<% for i in 0..34 do %>
+				
+						<%if i === @answer
+							@blank = 0;
+							end%>
+					
+
+					<% case (i % 7) 
+						when 0%>
+						<tr><td id = 'square<%=i%>' class = 'regday'>
+							
+								<% if defined?@blank%>
+									<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+									<%end%>	
+								<%end%>	
+								
+								<% if ((i - @answer) +1 < 10)
+										str_day = "0" + ((i - @answer) +1).to_s
+									else
+										str_day = ((i - @answer) +1).to_s
+									end%>
+								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+							
+						 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+								<% end %>
+							
+						</td>
+
+					<%  when 6%>
+						<td id = 'square<%=i%>' class = 'regday'>
+							
+						<% if defined?@blank%>
+							<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+								<%end%>	
+						<%end%>	
+						
+						<% if ((i - @answer) +1 < 10)
+								str_day = "0" + ((i - @answer) +1).to_s
+							else
+								str_day = ((i - @answer) +1).to_s
+							end%>
+						<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+						<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+					
+				 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+						<% end %>
+
+						</td></tr>
+					<%  else %>
+						<td id = 'square<%=i%>' class = 'regday'>
+							
+							<% if defined?@blank%>
+								<%if @blank+1 <= @numofdays%>
+										<%= @blank +=1%>
+								<%end%>	
+							<%end%>	
+						
+								<% if ((i - @answer) +1 < 10)
+										str_day = "0" + ((i - @answer) +1).to_s
+									else
+										str_day = ((i - @answer) +1).to_s
+									end%>
+								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+							
+						 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+								<% end %>
+						
+
+						</td>
+					<% end %>	
+				 <% end %>
+
+
+
+
+
+
+			<!--<tr>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'></td>
+				<td class = 'regday'>
+					<p class="num">1</p>
+
+						<% @whatday = '2013-08-19'%>
+				<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+					
+				
+				  <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+
+				<% end %>
+
+				</td>
+				<td class = 'regday'><p class="num">2</p></td>
+				<td class = 'regday'><p class="num">3</p></td></tr>
+				<tr>
+					<%(4..10).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
+
+				<tr>
+					<%(11..17).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
+
+				<tr>
+					<%(18..24).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
+
+				<tr>
+					<%(25..31).each{|x|%> 
+					<td class = 'regday'><p class="num"><%="#{x}"%></p></td><%}%>
+				</tr>
+			-->
+		</tbody>
+	</table>
+</div>
+

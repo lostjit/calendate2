@@ -50,7 +50,7 @@
 								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 							
-						 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
 							
 						</td>
@@ -72,7 +72,7 @@
 						<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 						<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 					
-				 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+				 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 						<% end %>
 
 						</td></tr>
@@ -93,7 +93,7 @@
 								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 							
-						 		 <%= f.button :submit, value:'test', class: 'btn btn-primary'%>
+						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
 						
 

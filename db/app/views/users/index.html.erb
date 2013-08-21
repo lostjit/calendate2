@@ -1,0 +1,56 @@
+
+  <% content_for :login do%>
+  <h1 id="welcome">Welcome To Calendate! </h1>
+  <%= simple_form_for @user, :url => login_path, :method => :post, :html => {:class => 'slide-toggle-left form-horizontal', :id => 'login_user', :role => "form"} do |f| %>
+  <% if flash[:error] %>
+  <p><%= flash[:error] %></p>
+  <% end %>
+  <h5 class="span1 login_text">Login</h5>
+  <div class="clear"></div>
+  <%= f.input :email_address, placeholder: 'Email', label: false, :wrapper_html => { :class => 'span3 inputs'}%>
+  <%= f.input :password, placeholder: 'Password', label: false, :wrapper_html => { :class => 'span3 inputs'}%>
+<!--       <div class="clear"></div> -->
+  <%= f.button :submit, value:'Login', class: 'btn btn-custom login_btn'%>
+  <% end %>
+<% end %>
+
+<div id="main">
+  <div id="registration_div">
+  <%= simple_form_for @user, :url => register_path, :method => :post, :html => {:class => 'slide-toggle-left'} do |f| %>
+    <h2 id="register">Register</h2>
+<!--     <h5 class="reg">First Name</h5> -->
+    <%= f.input :first_name, label: false, placeholder: "First name" %>
+<!--     <h5 class="reg">Last Name</h5> -->
+    <%= f.input :last_name, label: false, placeholder: "Last name" %>
+<!--     <h5 class="reg">Email</h5> -->
+    <%= f.input :email_address, label: false, placeholder: "Email address" %>
+<!--     <h5 class="reg">Password</h5> -->
+    <%= f.input :password, label: false, placeholder: "Password" %>
+<!--     <h5 class="reg">Confirm Password</h5> -->
+    <%= f.input :password_confirmation, label: false, placeholder: "Confirm Password" %>
+    <%= f.button :submit, value:'Register', class: 'btn btn-custom register_btn'%>
+  <% end %>
+  </div>
+</div>
+<div class="clear"></div>
+  <div class="row">
+    <div class="span4">
+      <!-- <img class="media-object" data-src="holder.js/64x64" src="assets/calendar_purple.png"> -->
+      <h2>Step 1</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+      </p>
+    </div>
+    <div class="span4">
+      <!-- <img class="media-object" data-src="holder.js/64x64" src="assets/calendar_purple.png"> -->
+      <h2>Step 2</h2>
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+    </div>
+    <div class="span4">
+      <!-- <img class="media-object" data-src="holder.js/64x64" src="assets/calendar_purple.png"> -->
+      <h2>Step 3</h2>
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+    </div>
+  </div>
+</div>

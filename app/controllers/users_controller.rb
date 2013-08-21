@@ -14,7 +14,8 @@ class UsersController < ApplicationController
 
     if @user.save
       sign_in @user
-      redirect_to user_path(@user)
+      @time1 = Time.new
+      redirect_to user_show_path(@user, @time1)
     else
       @show = "register"
       render action: "index"
