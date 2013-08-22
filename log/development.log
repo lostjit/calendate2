@@ -81778,3 +81778,2481 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 15:24:16 -0700
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 15:24:16 -0700
+
+
+Started GET "/users/7/2013-07-04" for 127.0.0.1 at 2013-08-22 15:59:39 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-07-04"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-07%')
+  Rendered users/show.html.erb within layouts/users (31.0ms)
+Completed 200 OK in 118ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:40 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:41 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:41 -0700
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-08-22 15:59:41 -0700
+
+
+Started POST "/calendar_show/7/2013-08-01" for 127.0.0.1 at 2013-08-22 15:59:42 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-08-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-08%')
+  Rendered users/show.html.erb within layouts/users (50.0ms)
+Completed 200 OK in 75ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:42 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:43 -0700
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-08-22 15:59:44 -0700
+
+
+Started POST "/calendar_show/7/2013-09-01" for 127.0.0.1 at 2013-08-22 15:59:44 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-09-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-09%')
+  Rendered users/show.html.erb within layouts/users (29.0ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:45 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started POST "/calendar_show/7/2013-10-01" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-10-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-010%')
+  Rendered users/show.html.erb within layouts/users (44.0ms)
+Completed 200 OK in 74ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:48 -0700
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-08-22 15:59:48 -0700
+
+
+Started GET "/calendar_show/7/2013-010-03?utf8=%E2%9C%93&commit=%2B" for 127.0.0.1 at 2013-08-22 15:59:58 -0700
+Processing by CalendarsController#show as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"+", "id"=>"7", "dayis"=>"2013-010-03"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."day_of_event" = '2013-010-03' AND "calendars"."user_id" = 7
+  Rendered calendars/show.html.erb within layouts/calendars (9.0ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/calendars.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 15:59:59 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:00 -0700
+
+
+Started POST "/calendar_add/2013-010-03" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+Processing by CalendarsController#add as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "calendar"=>{"event"=>"1", "description"=>"1"}, "date"=>{"year"=>"2013", "month"=>"8", "day"=>"22", "hour"=>"22", "minute"=>"59"}, "commit"=>"Add it!", "dayis"=>"2013-010-03"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "calendars" ("created_at", "day_of_event", "description", "event", "event_time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 22 Aug 2013 23:00:06 UTC +00:00], ["day_of_event", Sun, 10 Mar 2013], ["description", "1"], ["event", "1"], ["event_time", 2000-01-01 22:59:00 UTC], ["updated_at", Thu, 22 Aug 2013 23:00:06 UTC +00:00], ["user_id", 7]]
+  [1m[35m (100.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendar_show/7/2013-010-03
+Completed 302 Found in 120ms (ActiveRecord: 104.3ms)
+
+
+Started GET "/calendar_show/7/2013-010-03" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"7", "dayis"=>"2013-010-03"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."day_of_event" = '2013-010-03' AND "calendars"."user_id" = 7
+  Rendered calendars/show.html.erb within layouts/calendars (18.0ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/calendars.css?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:06 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:07 -0700
+
+
+Started GET "/users/7/2013-010-03" for 127.0.0.1 at 2013-08-22 16:00:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-010-03"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (1.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-03%')
+  Rendered users/show.html.erb within layouts/users (31.0ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:11 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at 2013-08-22 16:00:12 -0700
+
+
+Started GET "/users/7/2013-010-03" for 127.0.0.1 at 2013-08-22 16:01:04 -0700
+
+SyntaxError - c:/Sites/Calendate2/app/controllers/users_controller.rb:135: syntax error, unexpected $end, expecting keyword_end:
+  app/controllers/users_controller.rb:135:in `'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__28957378__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/53216100/variables" for 127.0.0.1 at 2013-08-22 16:01:04 -0700
+
+
+Started GET "/users/7/2013-010-03" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-010-03"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-03%')
+  Rendered users/show.html.erb within layouts/users (31.0ms)
+Completed 200 OK in 94ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:11 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:12 -0700
+
+
+Started GET "/users/7/2013-010-03" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-010-03"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-03%')
+  Rendered users/show.html.erb within layouts/users (29.0ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:17 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:18 -0700
+
+
+Started POST "/calendar_show/7/2013-02-01" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-02-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-02%')
+  Rendered users/show.html.erb within layouts/users (51.0ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:20 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:21 -0700
+
+
+Started POST "/calendar_show/7/2013-03-01" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-03-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-03%')
+  Rendered users/show.html.erb within layouts/users (44.0ms)
+Completed 200 OK in 93ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:23 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:24 -0700
+
+
+Started POST "/calendar_show/7/2013-02-01" for 127.0.0.1 at 2013-08-22 16:01:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-02-01"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-02%')
+  Rendered users/show.html.erb within layouts/users (42.0ms)
+Completed 200 OK in 72ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:27 -0700
+
+
+Started POST "/calendar_show/7/2013-01-01" for 127.0.0.1 at 2013-08-22 16:01:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-01-01"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-01%')
+  Rendered users/show.html.erb within layouts/users (34.0ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:28 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:01:29 -0700
+
+
+Started POST "/calendar_show/7/2012-12-01" for 127.0.0.1 at 2013-08-22 16:01:31 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2012-12-01"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCalendar Load (0.0ms)[0m  SELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2012-12%')
+Completed 500  in 8ms
+
+TypeError - nil can't be coerced into Fixnum:
+  app/controllers/users_controller.rb:126:in `show'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__197082251__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__28957378__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/53047728/variables" for 127.0.0.1 at 2013-08-22 16:01:31 -0700
+
+
+Started GET "/users" for 127.0.0.1 at 2013-08-22 16:02:06 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/users (25.0ms)
+Completed 200 OK in 58ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/users (35.0ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:07 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:08 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:09 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2013-08-22 16:02:12 -0700
+Processing by SessionsController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "user"=>{"email_address"=>"blah@aol.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email_address" = 'blah@aol.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/7/2013-08-22%2016:02:12%20-0700
+Completed 302 Found in 121ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7/2013-08-22%2016:02:12%20-0700" for 127.0.0.1 at 2013-08-22 16:02:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7", "monthis"=>"2013-08-22 16:02:12 -0700"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-08%')[0m
+  Rendered users/show.html.erb within layouts/users (51.0ms)
+Completed 200 OK in 94ms (Views: 73.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:14 -0700
+
+
+Started POST "/calendar_show/7/2013-09-01" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-09-01"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (0.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-09%')[0m
+  Rendered users/show.html.erb within layouts/users (47.0ms)
+Completed 200 OK in 78ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:16 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:17 -0700
+
+
+Started POST "/calendar_show/7/2013-10-01" for 127.0.0.1 at 2013-08-22 16:02:18 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-10-01"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (0.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-10%')[0m
+  Rendered users/show.html.erb within layouts/users (45.0ms)
+Completed 200 OK in 75ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:18 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:20 -0700
+
+
+Started POST "/calendar_show/7/2013-11-01" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-11-01"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-11%')[0m
+  Rendered users/show.html.erb within layouts/users (35.0ms)
+Completed 200 OK in 65ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:23 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:24 -0700
+
+
+Started POST "/calendar_show/7/2013-12-01" for 127.0.0.1 at 2013-08-22 16:02:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-12-01"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-12%')[0m
+  Rendered users/show.html.erb within layouts/users (45.0ms)
+Completed 200 OK in 96ms (Views: 89.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:27 -0700
+
+
+Started GET "/calendar_show/7/2013-012-05?utf8=%E2%9C%93&commit=%2B" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+Processing by CalendarsController#show as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"+", "id"=>"7", "dayis"=>"2013-012-05"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."day_of_event" = '2013-012-05' AND "calendars"."user_id" = 7[0m
+  Rendered calendars/show.html.erb within layouts/calendars (19.0ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/calendars.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:29 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:30 -0700
+
+
+Started POST "/calendar_show/7/2013-12-01" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-12-01"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (0.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-12%')[0m
+  Rendered users/show.html.erb within layouts/users (62.0ms)
+Completed 200 OK in 113ms (Views: 84.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:49 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:02:50 -0700
+
+
+Started POST "/calendar_show/7/2013-12-01" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-12-01"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-12%')[0m
+  Rendered users/show.html.erb within layouts/users (69.0ms)
+Completed 200 OK in 123ms (Views: 115.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:25 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:26 -0700
+
+
+Started GET "/calendar_show/7/2013-12-04?utf8=%E2%9C%93&commit=%2B" for 127.0.0.1 at 2013-08-22 16:05:27 -0700
+Processing by CalendarsController#show as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"+", "id"=>"7", "dayis"=>"2013-12-04"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."day_of_event" = '2013-12-04' AND "calendars"."user_id" = 7[0m
+  Rendered calendars/show.html.erb within layouts/calendars (13.0ms)
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/calendars.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:28 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:29 -0700
+
+
+Started POST "/calendar_add/2013-12-04" for 127.0.0.1 at 2013-08-22 16:05:33 -0700
+Processing by CalendarsController#add as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "calendar"=>{"event"=>"werawew", "description"=>"e"}, "date"=>{"year"=>"2013", "month"=>"8", "day"=>"22", "hour"=>"23", "minute"=>"05"}, "commit"=>"Add it!", "dayis"=>"2013-12-04"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "calendars" ("created_at", "day_of_event", "description", "event", "event_time", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 22 Aug 2013 23:05:33 UTC +00:00], ["day_of_event", Wed, 04 Dec 2013], ["description", "e"], ["event", "werawew"], ["event_time", 2000-01-01 23:05:00 UTC], ["updated_at", Thu, 22 Aug 2013 23:05:33 UTC +00:00], ["user_id", 7]]
+  [1m[36m (98.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/calendar_show/7/2013-12-04
+Completed 302 Found in 117ms (ActiveRecord: 101.3ms)
+
+
+Started GET "/calendar_show/7/2013-12-04" for 127.0.0.1 at 2013-08-22 16:05:33 -0700
+Processing by CalendarsController#show as HTML
+  Parameters: {"id"=>"7", "dayis"=>"2013-12-04"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."day_of_event" = '2013-12-04' AND "calendars"."user_id" = 7[0m
+  Rendered calendars/show.html.erb within layouts/calendars (20.0ms)
+Completed 200 OK in 66ms (Views: 60.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/calendars.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:34 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:35 -0700
+
+
+Started GET "/users/7/2013-12-04" for 127.0.0.1 at 2013-08-22 16:05:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "id"=>"7", "monthis"=>"2013-12-04"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (1.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-12%')[0m
+  Rendered users/show.html.erb within layouts/users (65.0ms)
+Completed 200 OK in 97ms (Views: 88.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:05:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:05:38 -0700
+
+
+Started POST "/sessions/destroy" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48="}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/users (25.0ms)
+Completed 200 OK in 56ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:53 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:09:54 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2013-08-22 16:10:01 -0700
+Processing by SessionsController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "user"=>{"email_address"=>"blah@aol.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email_address" = 'blah@aol.com' LIMIT 1
+Completed 500  in 145ms
+
+NameError - undefined local variable or method `realday' for #<SessionsController:0x6529c08>:
+  app/controllers/sessions_controller.rb:28:in `login'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__14583811__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.1.4) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.1.4) lib/omniauth/builder.rb:49:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.2.8) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__28957378__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (0.9.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/52484928/variables" for 127.0.0.1 at 2013-08-22 16:10:01 -0700
+
+
+Started POST "/login" for 127.0.0.1 at 2013-08-22 16:10:12 -0700
+Processing by SessionsController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g7yp4MBpce6ElMJNvHaAEUJzQ7XALLJnT6ULkwTHk48=", "user"=>{"email_address"=>"blah@aol.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email_address" = 'blah@aol.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/7/2013-08-22
+Completed 302 Found in 120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/7/2013-08-22" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7", "monthis"=>"2013-08-22"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (0.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-08%')[0m
+  Rendered users/show.html.erb within layouts/users (31.0ms)
+Completed 200 OK in 74ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:13 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:10:14 -0700
+
+
+Started GET "/users/7/2013-08-22" for 127.0.0.1 at 2013-08-22 16:11:43 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7", "monthis"=>"2013-08-22"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mCalendar Load (0.0ms)[0m  [1mSELECT "calendars".* FROM "calendars" WHERE "calendars"."user_id" = 7 AND (day_of_event LIKE '2013-08%')[0m
+  Rendered users/show.html.erb within layouts/users (33.0ms)
+Completed 200 OK in 172ms (Views: 56.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:44 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:45 -0700
+
+
+Started GET "/assets/calendars.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-22 16:11:45 -0700

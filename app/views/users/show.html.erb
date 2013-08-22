@@ -42,7 +42,14 @@
 										str_day = ((i - @answer) +1).to_s
 										end%>
 
-										<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+										<% 
+											 if @month < 10
+												@whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day
+											else 
+												@whatday = @year.to_s + "-" + @month.to_s + "-" + str_day
+											end
+												%>
+										 
 										<%= simple_form_for @user,  :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 
 
@@ -77,7 +84,19 @@
 							else
 								str_day = ((i - @answer) +1).to_s
 							end%>
-						<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+						
+
+												<% 
+											 if @month < 10
+												@whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day
+											else 
+												@whatday = @year.to_s + "-" + @month.to_s + "-" + str_day
+											end
+												%>
+
+
+
+
 						<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 
 				 		 <%= f.button :submit, value:'+', class: 'btn btn-primary btn-custom add_event'%>
@@ -110,7 +129,14 @@
 									end%>
 
 
-								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+										<% 
+											 if @month < 10
+												@whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day
+											else 
+												@whatday = @year.to_s + "-" + @month.to_s + "-" + str_day
+											end
+												%>
+
 								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
 
 						 		 <%= f.button :submit, value:'+', class: 'btn btn-primary btn-custom add_event'%>
