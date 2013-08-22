@@ -3,5 +3,14 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-#$(document).on "click", "td", ->
-#  $(this).find('form').submit()
+#$(document).click ->
+ #alert "page has loaded!"
+
+#$(document).ready ->
+ # $(".add_event").hide()
+
+#$(document).ready ->
+#  $("td").on "click", ->
+#    $(this).children(".simple_form").submit()
+
+

@@ -16,7 +16,7 @@
 	<div id="myModal" class="modal hide fade">
 	    <div class="modal-header">
 		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		    <h3>New Event</h3>
+		    <h3>New Event <%= @day %></h3>
 		</div>
 	    <div class="modal-body">
 			<%= simple_form_for @newevent, :url => calendar_add_path(@day), :method => :post do |f| %>

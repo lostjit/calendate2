@@ -1,4 +1,10 @@
 Calendate2::Application.routes.draw do
+  # match 'auth/:provider/callback', to: 'sessions#create'
+  # match 'auth/failure', to: redirect('/')
+  # match 'signout', to: 'sessions#destroy', as: 'signout'
+
+  
+
   resources :users, only: [:index, :create, :new, :destroy, :edit]
   get 'users/:id/:monthis' => 'users#show', as: :user_show
   post 'login' => 'sessions#login', as: :login

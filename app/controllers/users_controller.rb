@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-  	@user = User.new
+    @user = User.new
   end
 
   def index
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def create
  
-  	@user = User.new(user_params)
+    @user = User.new(user_params)
 
 
     if @user.save
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
   def show
     @dateis = (params[:monthis].to_date)
-  	@user = Calendar.new
+    @user = Calendar.new
 
      @year = @dateis.year
     @month = @dateis.month

@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
 
+
 	def login
 		user = User.find_by(email_address: params[:user][:email_address]).try(:authenticate, params[:user][:password])
 	  	if user == false || user.nil?

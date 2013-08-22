@@ -55,6 +55,8 @@ end
 
 gem 'debugger'
 
+gem 'omniauth-facebook'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
