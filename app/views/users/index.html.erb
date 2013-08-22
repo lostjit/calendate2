@@ -3,13 +3,12 @@
   <h1 id="welcome">Welcome To Calendate! </h1>
   <%= simple_form_for @user, :url => login_path, :method => :post, :html => {:class => 'slide-toggle-left form-horizontal', :id => 'login_user', :role => "form"} do |f| %>
   <% if flash[:error] %>
-  <p><%= flash[:error] %></p>
+  <p id="match_error"><%= flash[:error] %></p>
   <% end %>
   <h5 class="span1 login_text">Login</h5>
   <div class="clear"></div>
   <%= f.input :email_address, placeholder: 'Email', label: false, :wrapper_html => { :class => 'span3 inputs'}%>
   <%= f.input :password, placeholder: 'Password', label: false, :wrapper_html => { :class => 'span3 inputs'}%>
-<!--       <div class="clear"></div> -->
   <%= f.button :submit, value:'Login', class: 'btn btn-custom login_btn'%>
   <% end %>
 <% end %>
@@ -18,17 +17,17 @@
   <div id="registration_div">
   <%= simple_form_for @user, :url => register_path, :method => :post, :html => {:class => 'slide-toggle-left'} do |f| %>
     <h2 id="register">Register</h2>
-    <h5 class="reg">First Name</h5>
-    <%= f.input :first_name, label: false %>
-    <h5 class="reg">Last Name</h5>
-    <%= f.input :last_name, label: false %>
-    <h5 class="reg">Email</h5>
-    <%= f.input :email_address, label: false %>
-    <h5 class="reg">Password</h5>
-    <%= f.input :password, label: false %>
-    <h5 class="reg">Confirm Password</h5>
-    <%= f.input :password_confirmation, label: false %>
-    <%= f.button :submit, value:'Register', class: 'btn btn-custom'%>
+<!--     <h5 class="reg">First Name</h5> -->
+    <%= f.input :first_name, label: false, placeholder: "First name" %>
+<!--     <h5 class="reg">Last Name</h5> -->
+    <%= f.input :last_name, label: false, placeholder: "Last name" %>
+<!--     <h5 class="reg">Email</h5> -->
+    <%= f.input :email_address, label: false, placeholder: "Email address" %>
+<!--     <h5 class="reg">Password</h5> -->
+    <%= f.input :password, label: false, placeholder: "Password" %>
+<!--     <h5 class="reg">Confirm Password</h5> -->
+    <%= f.input :password_confirmation, label: false, placeholder: "Confirm Password" %>
+    <%= f.button :submit, value:'Register', class: 'btn btn-custom register_btn'%>
   <% end %>
   </div>
 </div>

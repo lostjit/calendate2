@@ -1,43 +1,46 @@
+<% content_for :links do%>
+<h1 id="title">Calendate</h1>
+	<h2 class="username"><%= @current_user.first_name + " " + @current_user.last_name %> </h2>
+	<div id="nav_links">
+	<%= link_to "My Calendar", user_show_path(current_user, @day), method: :get %>	
 
+		<%= link_to 'Logout', logout_path, :method => :post %>
 
-<h1>Events for: <%= @day %></h1>    <%= link_to "Back to your Calendate!", user_show_path(current_user, @day), method: :get %>	
-
-
-<div class ='logout'>
-	<%= link_to 'Logout', logout_path, :method => :post %>
 </div>
-
-
+<% end %>
+<h2>Events for: <%= @day %></h2>
 
 <div id ='leftcalen'>
+	
+<a href="#myModal" role="button" class="btn btn-custom" data-toggle="modal">Add an event</a>
+	<div id="myModal" class="modal hide fade">
+	    <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		    <h3>New Event</h3>
+		</div>
+	    <div class="modal-body">
+			<%= simple_form_for @newevent, :url => calendar_add_path(@day), :method => :post do |f| %>
+			<%= f.input :event, label: false, placeholder: "Title" %>
+			<%= f.input :description, :as=> :text,  label: false, placeholder: "Notes..."%>
+			Time: <%= select_time() %>
+		</div>
+		<div class="modal-footer">
+			<%= f.button :submit, value:'Add it!', class: 'btn btn-custom'%>
+			<% end %>
+		</div>
+	</div>
+
 
 	<% @alluserevents.each do |event| %>
-		<div>
+	<div class="well well-large">
+		<div class="event_time">
 			<p>Event Time:  <%= event.event_time.to_formatted_s(:time) %> </p>
 		</div>
 		<div class = 'eventdiv'>
 			<p>Event: <%= event.event %> </p>
 			<p>Notes: <%= event.description %> </p>	
-			<%= link_to "delete", calendar_delete_path(event.id, @day), method: :delete %>	
+			<%= link_to "delete", calendar_delete_path(event.id, @day), method: :delete, :class => " btn btn-custom" %>	
 		</div>
+	</div>
 	<% end %>
-</div>
-
-<div id='rightcalen'>
-
-	<%= simple_form_for @newevent, :url => calendar_add_path(@day), :method => :post do |f| %>
-	<h1>Add Event</h1>
-	  <%= f.input :event, label: 'Title:' %>
-	  <%= f.input :description, :as=> :text,  label: 'Notes' %>
-	  	Time: <%= select_time() %>
-	  <%= f.button :submit, value:'Add it!', class: 'btn btn-primary'%>
-
-<% end %>
-
-
-
-
-
-
-
 </div>

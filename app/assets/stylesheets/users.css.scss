@@ -20,6 +20,12 @@
 		float: right;
 		margin-top: 3px;
 	}
+	.login_btn{
+		margin-bottom: 5px;
+	}
+	input[type="submit"].btn {
+	margin-bottom: 5px;
+	}
 	.login_text{
 	margin: 0px;
 	margin-bottom: 2px;
@@ -32,27 +38,16 @@
 		input{
 			margin-left: 0px;
 		}
-			input[type="text"]{
-				height: 12px;
-				line-height: 12px;
-			}
-			input[type="password"]{
-					height: 12px;
-				line-height: 12px;
-			}
-			input[type="email"]{
-					height: 12px;
-				line-height: 12px;
-			}
+	#match_error{
+		float:right;
+		text-shadow: 2px 2px 8px red;
+	}
 
-		.top input{
-			float: right;
-		}
-		.top .inputs{
-			margin-left: 0px;
-		}
 [class*="span"] {
 	margin-left: 5px;
+}
+.input{
+	margin-bottom: 10px;
 }
 .clear{
 	clear: both;
@@ -72,30 +67,34 @@ font-size: 26px;
 .email{
 	margin-left: 0px;
 }
+.register_btn{
+	margin-top: 10px;
+}
 .btn-custom {
+	font-weight: bold;
 	float: right;
-	margin-top: 5px;
   background-color: hsl(187, 7%, 8%) !important;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#611c61", endColorstr="#360436");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#611c61), to(#360436));
-  background-image: -moz-linear-gradient(top, #611c61, #360436);
-  background-image: -ms-linear-gradient(top, #611c61, #360436);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #611c61), color-stop(100%, #360436));
-  background-image: -webkit-linear-gradient(top, #611c61, #360436);
-  background-image: -o-linear-gradient(top, #611c61, #360436);
-  background-image: linear-gradient(#611c61, #360436);
-  border-color: #360436 #360436 hsl(187, 7%, 2%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#611c61", endColorstr="#19022e");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#472963), to(#19022e));
+  background-image: -moz-linear-gradient(top, #472963, #19022e);
+  background-image: -ms-linear-gradient(top, #472963, #19022e);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #472963), color-stop(100%, #19022e));
+  background-image: -webkit-linear-gradient(top, #472963, #19022e);
+  background-image: -o-linear-gradient(top, #472963, #19022e);
+  background-image: linear-gradient(#472963, #19022e);
+  border-color: #19022e #19022e hsl(187, 7%, 2%);
   color: #fff !important;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.39);
   -webkit-font-smoothing: antialiased;
 }
 #main{
-	padding: 5px 50px;
-	background-image: url('/assets/ny_dark.jpg');
-	height: 480px;
+	padding: 5px 35px;
+	background-image: url('/assets/ny2.jpg');
+	height: 460px;
 	background-size: 98% auto;
-	border-top: 2px solid white;
+	border-top: 1px solid white;
+	box-shadow: 5px 5px 6px #3c3b3b;
 }
 	#main input{
 	margin-bottom: 0px;
@@ -106,6 +105,8 @@ font-size: 26px;
 		border-radius: 10px;
 		padding: 10px;
 		margin-bottom: 20px;
+		width: 230px;
+		margin-right: -480px;
 	}
 .reg{
 	margin-bottom:2px;
@@ -113,21 +114,12 @@ font-size: 26px;
 	margin-top: 0px;
 	color: white;
 }
-.glossy{
-	
-}
 .row{
 	margin: 10px auto;
 	padding-left: 2%;
 	padding-right: 2%;
 }
-img{
-	width: 350px;
-	height: auto;
-	margin: 0px auto;
-	float: left;
-	margin-left: 25%;
-}
+
 p{
 	text-align: center;
 }
@@ -143,9 +135,7 @@ button{
 input .button{
 	margin-bottom: 20px;
 }
-#registration_div{
-	margin-right: 60px;
-}
+
 //////////// end of index page
 
 ///////////show page
@@ -153,15 +143,17 @@ input .button{
 .username{
 	font-size: 18px;
 	float: right;
+	margin-bottom: 0px;
 }
 .title{
 	width: 200px;
 	float:left;
+	margin-top: 2px;
 }
 #head_month{
-	background: -webkit-gradient(linear, left top, left bottom, from(#7726c9), to(#290f47));
-	background: -moz-linear-gradient(top,  #7726c9,  #290f47);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7726c9', endColorstr='#290f47');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6e446e), to(#240224));
+	background: -moz-linear-gradient(top,  #6e446e,  #240224);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6e446e', endColorstr='#240224');
 	height: 60px;
 	box-shadow: 3px 3px 5px #3c3b3b;
 	color: white;
@@ -172,7 +164,7 @@ input .button{
 	border-radius: 5px 5px 0px 0px;
 }
 #table{
-	margin: 0px auto;
+	margin: 3% auto;
 	width: 80%;
 }
 thead{
@@ -186,10 +178,16 @@ table{
 	width: 20px;
 	float: left;
 }
+.logout{
+	float: right;
+	margin-top: 22px;
+	margin-right: 15px;
+}
 /////////////end of show page
 
 td{
-	padding: 0px;
+	padding: 10px;
+	font-size: 17px;
 }
 .regday{
 
@@ -198,4 +196,49 @@ td{
 	width: 163px;
 	padding-top: 5px;
 }
+.error{
+	color: white;
+	margin-left: 5px;
+	font-size: 12px;
+	text-shadow: 2px 2px 8px red;
+}
+#last_month{
+	float: left;
+	margin-left: 10%;	
+}
+#next_month{
+	float:right;
+	margin-right: 10%;
+}
+.links{
 
+}
+a{
+	color: #6e4d96;
+	font-weight: bold;
+	font-size: 16px;
+}
+a:active{
+	color: #9071b4;
+}
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+#new_calendar{
+	margin-bottom: 60%;
+}
+i{
+	font-size: 28px;
+}
+
+.icon{
+	
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: 1px solid green;
+	background-color:red;
+	margin: 3px;
+
+}

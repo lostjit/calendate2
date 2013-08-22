@@ -26,9 +26,17 @@ class UsersController < ApplicationController
     @dateis = (params[:monthis].to_date)
   	@user = Calendar.new
 
-    @time1 = Time.new
-    @year = @dateis.year
+     @year = @dateis.year
     @month = @dateis.month
+
+
+
+     @minidate = @year.to_s + "-0" + @month.to_s + "%"
+
+    @howmanyevents = Calendar.where("day_of_event LIKE ?", @minidate).where(user_id: current_user)
+    @howmanyevents_length = @howmanyevents.length
+
+
     @day = 1
 
     case @year
@@ -109,9 +117,7 @@ class UsersController < ApplicationController
        #variable to tell what day the 1st lands on for any given month/year (that we've listed)
     @answer = (@day + @a + @b) % 7
 
-    respond_to do |format| 
-      format.js
-
+    
   end
 
 

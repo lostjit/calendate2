@@ -1,24 +1,23 @@
 
+
+
 <% @previous = Date.new(@year,@month,@day) << 1 %>
 <% @next = Date.new(@year,@month,@day) >> 1  %>
 
 <% content_for :username do%>
 <h1 class="title">Calendate</h1>
 <h2 class="username"><%= current_user.first_name + " " + current_user.last_name %> </h2>
+<div class ='logout links'>
+<%= link_to 'Logout', logout_path, :method => :post %>
+</div>
 <% end %>
 
-
-<div class ='logout'>
-	<%= link_to 'Logout', logout_path, :method => :post %>
-</div>
-
-
+<h6 id="last_month" class="links"><i class="icon-chevron-left"></i><%= link_to 'Last Month', calendar_show_path(current_user, @previous), :method => :post, :class=> "btn"%></h6>
+		<h6 id="next_month" class="links"><%= link_to 'Next Month', calendar_show_path(current_user, @next), :method => :post, :class=> "btn" %><i class="icon-chevron-right"></i></h6>
 
 <div id="table">
 	<table>
-		<h6><%= link_to 'Last Month', calendar_show_path(current_user, @previous), :method => :post%></h6>
 		<h1 id ='head_month'><%= @monthname %></h1>
-		<h6><%= link_to 'Next Month', calendar_show_path(current_user, @next), :method => :post %></h6>
 
 		<thead>
 			<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
@@ -26,41 +25,52 @@
 		<tbody>
 
 			<% for i in 0..34 do %>
-				
-						<%if i === @answer
-							@blank = 0;
+
+				<%if i === @answer
+							@blank = 0
 							end%>
-					
+
 
 					<% case (i % 7) 
 						when 0%>
 						<tr><td id = 'square<%=i%>' class = 'regday'>
-							
+
 								<% if defined?@blank%>
 									<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
 
 										<% if ((i - @answer) +1 < 10)
 										str_day = "0" + ((i - @answer) +1).to_s
-									else
+										else
 										str_day = ((i - @answer) +1).to_s
-									end%>
-								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
-								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
-							
+										end%>
+									
+										<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
+										<%= simple_form_for @user,  :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
+
+										
+
+
 						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
-										
+
+								<% @howmanyevents.each do |event| 
+											if @whatday == event[:day_of_event].to_s
+											%>
+											<span class ='icon'> E </div>
+											<% end %>
+										<% end %>
+									
 									<%end%>	
 								<%end%>	
-								
-								
-							
+
+
+
 						</td>
 
 					<%  when 6%>
 						<td id = 'square<%=i%>' class = 'regday'>
-							
+
 						<% if defined?@blank%>
 							<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
@@ -72,21 +82,27 @@
 							end%>
 						<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 						<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
-					
+
 				 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 						<% end %>
+										<% @howmanyevents.each do |event| 
+											if @whatday == event[:day_of_event].to_s
+											%>
+											<span class ='icon'> E </div>
+											<% end %>
+										<% end %>
 
 
 
 								<%end%>	
 						<%end%>	
-						
-						
+
+
 
 						</td></tr>
 					<%  else %>
 						<td id = 'square<%=i%>' class = 'regday'>
-							
+
 							<% if defined?@blank%>
 								<%if @blank+1 <= @numofdays%>
 										<%= @blank +=1%>
@@ -99,19 +115,24 @@
 
 								<% @whatday = @year.to_s + "-0" + @month.to_s + "-" + str_day%>
 								<%= simple_form_for @user, :url => calendar_show_path(current_user, @whatday), :method => :get  do |f| %>
-							
+
 						 		 <%= f.button :submit, value:'i', class: 'btn btn-primary'%>
 								<% end %>
 
-
+								<% @howmanyevents.each do |event| 
+											if @whatday == event[:day_of_event].to_s
+											%>
+											<span class ='icon'> E </div>
+											<% end %>
+										<% end %>
 
 
 
 								<%end%>	
 							<%end%>	
-						
-								
-						
+
+
+
 
 						</td>
 					<% end %>	
@@ -166,4 +187,3 @@
 		</tbody>
 	</table>
 </div>
-
