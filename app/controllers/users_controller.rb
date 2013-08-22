@@ -23,6 +23,11 @@ class UsersController < ApplicationController
   end
 
   def show
+    if(!signed_in?)
+      deny_access
+    
+    end
+
     @dateis = (params[:monthis].to_date)
     @user = Calendar.new
 

@@ -29,7 +29,7 @@ module SessionsHelper
   end
 
   def deny_access
-    redirect_to welcome_path, :notice => "Please sign in to access this page."
+    redirect_to users_path, :notice => "Please sign in to access this page."
   end
 
 end
