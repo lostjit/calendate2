@@ -65,3 +65,4 @@ gem 'omniauth-facebook'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'uglifier', '>= 1.3.0'
