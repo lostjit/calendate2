@@ -52,6 +52,11 @@
 }
 .well{
 	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 20px; 
+	width: 25%;
+	height: auto;
+	float: left;
 }
 .btn-custom {
 font-weight: bold;
@@ -89,4 +94,7 @@ a:hover{
 
 .delete_link:hover{
 	color: #653b8c;
+}
+.add_btn{
+	float: left;
 }

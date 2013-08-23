@@ -57,6 +57,7 @@ font-size: 26px;
 	width: 45%;
 	float: left;
 	margin-top: 5px;
+	font-family: Century Gothic;
 }
 #register{
 	font-size: 18px;
@@ -90,8 +91,9 @@ font-size: 26px;
 }
 #main{
 	padding: 5px 35px;
-	background-image: url('http://ilikemilktea.com/images/ny2.jpg');
-	height: 460px;
+	background-image: url('/assets/ny.jpg');
+	background-repeat: none;
+	height: 630px;
 	background-size: 98% auto;
 	border-top: 1px solid white;
 	box-shadow: 5px 5px 6px #3c3b3b;
@@ -101,12 +103,12 @@ font-size: 26px;
 	}
 	#registration_div{
 		float: right;
-		border: 1px solid black;
 		border-radius: 10px;
 		padding: 10px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		width: 230px;
-		margin-right: -480px;
+		margin-left: 5%;
+		margin-right: 23px;
 	}
 .reg{
 	margin-bottom:2px;
@@ -160,12 +162,14 @@ input .button{
 	text-align: center;
 	padding-top: 7px;
 	margin: 0px auto;
-	margin-top: 5px;
+	margin-top: 0px;
 	border-radius: 5px 5px 0px 0px;
 }
 #table{
 	margin: 4% auto;
+	margin-top: 2%;
 	width: 80%;
+	box-shadow: 2px 2px 20px #3c3b3b;
 }
 thead{
 	border-left: 1px solid black;
@@ -173,11 +177,11 @@ thead{
 }
 table{
 	width: 100%;
+	background-color: white;
 }
 .num{
 	width: 20px;
 	float: left;
-	margin-top: -5px;
 }
 .logout{
 	float: right;
@@ -205,11 +209,11 @@ td{
 }
 #last_month{
 	float: left;
-	margin-left: 10%;
+	margin-left: 2%;
 }
 #next_month{
 	float:right;
-	margin-right: 10%;
+	margin-right: 2%;
 }
 .links{
 
@@ -233,9 +237,9 @@ i{
 	font-size: 28px;
 }
 .add_event{
-position:relative;
+	position: static;
 	float: right;
-	margin-top: -7px;
+
 	font-size: 10px;
 	font-size: 16px;
 
@@ -244,12 +248,41 @@ position:relative;
 padding: 0px 5px 2px 5px;
 }
 .icon{
-
-	color: white;
-	font-weight: bold;
+	float: left;
 	font-size: 18px;
-	border: 1px solid green;
-	background-color:red;
+	font-weight: bold;
 	margin: 3px;
+	color: #9ef4b3;
+}
+.event_icon{
+	padding-top: 5px;
+}
+.calendar{
+
+}
+body{
+	background-image: url('/assets/pw_pattern.png');
+}
+#headline{
+	width: 800px;
+	margin-left: 50px;
+	margin-top: 30px;
+	color: #dbdbdb;
+	font-family: Century Gothic;
+	margin-bottom: 30px;
+}
+#headline2{
+	margin-left: 15%;
+	color: #dbdbdb;
+	font-family: Century Gothic;
+	margin-bottom: 30px;
+}
+#headline3{
+	margin-left: 45%;
+	color: #dbdbdb;
+	font-family: Century Gothic;
+}
+#all_headlines{
+	float: left;
 
 }
