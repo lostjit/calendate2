@@ -66,8 +66,8 @@ class UsersController < ApplicationController
         @minidate = @year.to_s + "-" + @month.to_s + "%"
       end
 
-    @howmanyevents = User.find(current_user).calendars.where("day_of_event LIKE ?", @minidate)
-    #@howmanyevents = Calendar.where("day_of_event LIKE ?", @minidate).where(user_id: '<%=current_user%>')
+    #@howmanyevents = User.find(current_user).calendars.where("day_of_event LIKE ?", @minidate)
+    @howmanyevents = Calendar.where("cast(day_of_event as text) LIKE ?", @minidate).where(user_id: current_user)
     @howmanyevents_length = @howmanyevents.length
 
 
