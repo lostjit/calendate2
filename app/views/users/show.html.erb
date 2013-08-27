@@ -22,8 +22,13 @@
 				<tr><th class ='dayhead'>Sunday</th><th class ='dayhead'>Monday</th><th class ='dayhead'>Tuesday</th><th class ='dayhead'>Wednesday</th><th class ='dayhead'>Thursday</th><th class ='dayhead'>Friday</th><th class ='dayhead'>Saturday</th></tr>
 			</thead>
 			<tbody>
-
-				<% for i in 0..34 do %>
+				<% if ((@answer == 6 and @numofdays > 29) or (@answer == 5 and @numofdays == 31))
+					k = 41
+				else
+					k = 34
+				end %>
+					
+				<% for i in 0..k do %>
 
 					<%if i === @answer
 								@blank = 0
